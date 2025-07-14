@@ -693,7 +693,7 @@ Header Style
     height: auto;
   }
   .header-area .main-nav .nav li.has-sub:after {
-    color: #3B566E;
+    color: #000000;
     right: 30px;
     font-size: 14px;
     top: 15px;
@@ -902,7 +902,7 @@ Banner Style
 #section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3),
 #section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) {
   cursor: default;
-  color: #fff;
+  a: #fff;
   transition: all 0.5s;
 }
 #section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1) .progressbar,
@@ -1198,7 +1198,7 @@ About Page Style
   padding: 0px 15%;
 }
 
-.about-main-content .content .main-button {
+.about-main-content .content .main-button {p
   position: relative;
   z-index: 2;
   margin-top: 30px;
@@ -1382,7 +1382,7 @@ About Page Style
   width: 46px;
   height: 46px;
   text-align: center;
-  border: 1px solid #22b3c1;
+  border: 1px solid #000000;
   display: inline-block;
   line-height: 44px;
   border-radius: 50%;
@@ -1397,12 +1397,12 @@ About Page Style
 .weekly-offers .owl-nav .owl-prev::after {
   font-family: "FontAwesome";
   content: '\f060'; 
-  color: #22b3c1;
+  color: #000000;
   font-size: 20px;
   width: 46px;
   height: 46px;
   text-align: center;
-  border: 1px solid #22b3c1;
+  border: 1px solid #000000;
   display: inline-block;
   line-height: 44px;
   border-radius: 50%;
@@ -1413,7 +1413,7 @@ About Page Style
 .weekly-offers .owl-nav .owl-prev:hover::after,
 .weekly-offers .owl-nav .owl-next:hover::after {
   color: #fff;
-  background-color: #22b3c1;
+  background-color: #000000;
 }
 
 .more-about {
@@ -1442,7 +1442,7 @@ About Page Style
 }
 
 .more-about .info-item span {
-  color: #22b3c1;
+  color: #000000;
   font-size: 15px;
 }
 
@@ -1451,8 +1451,8 @@ About Page Style
 }
 
 .more-about .main-button a:hover {
-  background-color: #22b3c1;
-  border-color: #22b3c1;
+  background-color: #000000;
+  border-color: #000000;
   color: #fff;
   opacity: 0.85;
 }
@@ -1566,7 +1566,7 @@ body #user-button .u-icons a[href="https://twitter.com/Osorpenke"].show:before {
   transition: 0.25s ease-out;
 }
 body #user-button .u-icons a[href="https://twitter.com/Osorpenke"] div {
-  color: #1da1f2;
+  color: #000000;
 }
 body #user-button .u-icons a[href="https://codepen.io/z-"] div {
   background: black;
@@ -1731,7 +1731,7 @@ body .options .option {
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
 body .options .option {
-  --defaultBackground:#22b3c1;
+  --defaultBackground:#000000;
 }
 body .options .option.active {
   flex-grow: 10000;
@@ -1825,9 +1825,9 @@ body .options .option .label .info .sub {
 }
 
 .best-locations .main-button a:hover {
-  background-color: #22b3c1;
+  background-color: #000000;
   color: #fff;
-  border-color: #22b3c1;
+  border-color: #000000;
   opacity: 0.85;
 }
 
@@ -1901,7 +1901,7 @@ Deals Page Style
 }
 
 .search-form #search-form option {
-  background-color: #1ea0ad;
+  background-color: #000000;
 }
 
 .search-form #search-form button {
@@ -1924,7 +1924,7 @@ Deals Page Style
 
 .search-form #search-form button:hover {
   background-color: #fff;
-  color: #22b3c1;
+  color: #000000;
 }
 
 .amazing-deals {
@@ -1945,7 +1945,7 @@ Deals Page Style
 }
 
 .amazing-deals .item span.info {
-  color: #22b3c1;
+  color: #000000;
   font-size: 15px;
   margin-bottom: 20px;
   display: block;
@@ -1995,9 +1995,9 @@ Deals Page Style
   display: inline-block;
   width: 46px;
   height: 46px;
-  border: 1px solid #22b3c1;
+  border: 1px solid #000000;
   line-height: 44px;
-  color: #22b3c1;
+  color: #000000;
   text-align: center;
   font-size: 18px;
   font-weight: 500;
@@ -2007,7 +2007,7 @@ Deals Page Style
 
 .amazing-deals ul.page-numbers li.active a,
 .amazing-deals ul.page-numbers li a:hover {
-  background-color: #22b3c1;
+  background-color: #000000;
   color: #fff;
 }
 
@@ -2067,13 +2067,13 @@ Reservation Page Style
 
 .second-page-heading .main-button a {
   border-color: #fff;
-  color: #22b3c1;
+  color: #000000;
   background-color: #fff;
 }
 
 .second-page-heading .main-button a:hover {
-  border-color: #22b3c1;
-  background-color: #22b3c1;
+  border-color: #000000;
+  background-color: #000000;
   color: #fff;
 }
 
@@ -2097,7 +2097,7 @@ Reservation Page Style
   text-align: center;
   line-height: 60px;
   border-radius: 50px;
-  color: #22b3c1;
+  color: #000000;
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -2110,7 +2110,7 @@ Reservation Page Style
 
 .more-info .info-item a {
   font-size: 15px;
-  color: #22b3c1;
+  color: #000000;
 }
 
 .reservation-form {
@@ -2129,7 +2129,7 @@ Reservation Page Style
 
 .reservation-form #reservation-form h4 em {
   font-style: normal;
-  color: #22b3c1;
+  color: #000000;
 }
 
 .reservation-form #reservation-form {
@@ -2163,8 +2163,8 @@ Reservation Page Style
 .reservation-form #reservation-form button {
   font-size: 14px;
   color: #fff;
-  background-color: #22b3c1;
-  border: 1px solid #22b3c1;
+  background-color: #000000;
+  border: 1px solid #000000;
   padding: 12px 30px;
   width: 100%;
   text-align: center;
