@@ -9,24 +9,25 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Shyena Travel Reservation Page</title>
+    <title>Shyena Travel Bootstrap 5 Theme</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/templatemo-Shyena-travel.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-woox-travel.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <!--
 
-TemplateMo 580 Shyena Travel
+TemplateMo 580 Woox Travel
 
-https://templatemo.com/tm-580-Shyena-travel
+https://templatemo.com/tm-580-woox-travel
 
 -->
+
   </head>
 
 <body>
@@ -52,16 +53,16 @@ https://templatemo.com/tm-580-Shyena-travel
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
+                        <img src="{% static 'assets/images/logo.png' %}" alt="">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                      <ul class="nav">
-                        <li><a href="/home">Home</a></li>
-                        <li><a href="/about" class="active">About</a></li>
-                        <li><a href="/deals">Deals</a></li>
-                        <li><a href="/reservation">Reservation</a></li>
-                    </ul>   
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}" class="active">About</a></li>
+                        <li><a href="{% url 'deals' %}">Deals</a></li>
+                        <li><a href="{% url 'reservation' %}">Reservation</a></li>
+                    </ul>  
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -71,7 +72,7 @@ https://templatemo.com/tm-580-Shyena-travel
         </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
+    <!-- ***** Header Area End ***** -->
 
   <div class="second-page-heading">
     <div class="container">
@@ -182,16 +183,17 @@ https://templatemo.com/tm-580-Shyena-travel
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">Shyena Travel</a> Company. All rights reserved. 
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
-        </div>
+<!-- footer.html -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright © 2036 <a href="#">Shyena Travel</a> Company. All rights reserved.
+        <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
 
   <!-- Scripts -->
@@ -207,11 +209,20 @@ https://templatemo.com/tm-580-Shyena-travel
   <script src="{% static 'assets/js/custom.js' %}"></script>
 
   <script>
-    $(".option").click(function(){
-      $(".option").removeClass("active");
-      $(this).addClass("active"); 
+    function bannerSwitcher() {
+      next = $('.sec-1-input').filter(':checked').next('.sec-1-input');
+      if (next.length) next.prop('checked', true);
+      else $('.sec-1-input').first().prop('checked', true);
+    }
+
+    var bannerTimer = setInterval(bannerSwitcher, 5000);
+
+    $('nav .controls label').click(function() {
+      clearInterval(bannerTimer);
+      bannerTimer = setInterval(bannerSwitcher, 5000)
     });
   </script>
+
 
   </body>
 
