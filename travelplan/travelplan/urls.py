@@ -19,6 +19,8 @@ from django.urls import path
 from . import views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.urls import path, include
+
 
 
 
@@ -28,8 +30,7 @@ urlpatterns = [
     path('about/', views.About_page, name='about'),
     path('deals/', views.Deals_page, name='deals'),
     path('reservation/', views.Reservation_page, name='reservation'),
-
-
+    path('exploremore/', include('exploremore.urls')), 
 ]
 
 if settings.DEBUG:

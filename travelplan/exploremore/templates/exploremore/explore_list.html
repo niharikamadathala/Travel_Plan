@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explore More</title>
+</head>
+<body>
+    <h1>Places to Explore</h1>
+    <ul>
+        {% for place in places %}
+        <li>
+            <h2>{{ place.name_of_place }}</h2>
+            {% if place.image %}
+                <img src="{{ place.image.url }}" alt="{{ place.name_of_place }}" />
+            {% endif %}
+            <p>{{ place.description }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
